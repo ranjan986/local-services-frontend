@@ -1,0 +1,58 @@
+.provider-bookings-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.provider-bookings-container h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #1a237e;
+  margin-bottom: 30px;
+}
+
+.booking-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.booking-card h3 {
+  margin: 0 0 10px;
+  color: #007bff;
+}
+
+.booking-card p {
+  margin: 5px 0;
+  color: #444;
+  font-size: 15px;
+}
+
+.booking-card strong {
+  color: #000;
+}
+
+.booking-card select {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.booking-card select:focus {
+  border-color: #007bff;
+}

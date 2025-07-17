@@ -1,0 +1,59 @@
+/* Overall container */
+.provider-dashboard {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px 30px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section titles */
+.provider-dashboard h2,
+.provider-dashboard h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.provider-dashboard form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.provider-dashboard input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.provider-dashboard input:focus {
+  border-color: #007bff;
+}
+
+/* Submit button */
+.provider-dashboard button {
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.provider-dashboard button:hover {
+  background-color: #0056b3;
+}
+
+#edit {
+  margin-right: 15px;
+}

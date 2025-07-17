@@ -1,0 +1,53 @@
+.my-bookings-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f8fb;
+}
+
+.my-bookings-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1a237e;
+  font-size: 32px;
+}
+
+/* Grid layout for cards (optional for future expansion) */
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Single booking card */
+.booking-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #dce3ec;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card h3 {
+  margin: 0 0 10px;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.booking-card p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Status color based on value (optional enhancement) */
+.booking-card .status {
+  font-weight: bold;
+  color: #28a745; /* green for confirmed, can change dynamically */
+}

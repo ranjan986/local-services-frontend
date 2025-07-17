@@ -1,0 +1,67 @@
+.book-service {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.book-service h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.book-service p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.book-service label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.book-service input[type="date"] {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.book-service input[type="date"]:focus {
+  border-color: #007bff;
+}
+
+.book-service button {
+  padding: 12px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-service button:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .book-service {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+}
