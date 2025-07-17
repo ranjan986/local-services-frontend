@@ -8,7 +8,7 @@ const MyBookings = () => {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/bookings/my', {
+    axios.get('https://local-services-backend.onrender.com/api/bookings/my', {
       headers: { Authorization: token }
     })
       .then(res => setBookings(res.data))

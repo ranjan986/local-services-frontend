@@ -11,7 +11,7 @@ const Services = () => {
 
   // Fetch services from backend
   useEffect(() => {
-    axios.get('http://localhost:5000/api/services/all')
+    axios.get('https://local-services-backend.onrender.com/api/services/all')
       .then(res => {
         setServices(res.data);
         setFiltered(res.data);

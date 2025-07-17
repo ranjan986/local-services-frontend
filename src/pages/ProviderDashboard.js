@@ -13,7 +13,7 @@ const ProviderDashboard = () => {
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const fetchServices = () => {
-    axios.get("http://localhost:5000/api/services/all").then((res) => {
+    axios.get("https://local-services-backend.onrender.com/api/services/all").then((res) => {
       const myServices = res.data.filter((s) => s.provider?._id === JSON.parse(localStorage.getItem("user"))._id);
       setServices(myServices);
     });
@@ -27,7 +27,7 @@ const ProviderDashboard = () => {
     }
     if (image) data.append("image", image);
 
-    await axios.post("http://localhost:5000/api/services/add", data, {
+    await axios.post("https://local-services-backend.onrender.com/api/services/add", data, {
       headers: {
         "Content-Type": "multipart/form-data",
         Authorization: token,
@@ -41,7 +41,7 @@ const ProviderDashboard = () => {
 
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this service?")) {
-      await axios.delete(`http://localhost:5000/api/services/delete/${id}`, {
+      await axios.delete(`https://local-services-backend.onrender.com/api/services/delete/${id}`, {
         headers: { Authorization: token },
       });
       fetchServices();
@@ -67,7 +67,7 @@ const ProviderDashboard = () => {
     }
     if (image) data.append("image", image);
 
-    await axios.put(`http://localhost:5000/api/services/update/${editMode}`, data, {
+    await axios.put(`https://local-services-backend.onrender.com/api/services/update/${editMode}`, data, {
       headers: {
         "Content-Type": "multipart/form-data",
         Authorization: token,

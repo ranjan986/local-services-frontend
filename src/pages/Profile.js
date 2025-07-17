@@ -13,7 +13,7 @@ const Profile = () => {
     const formData = new FormData();
     formData.append("image", image);
 
-    const res = await axios.post("http://localhost:5000/api/profile/upload-profile", formData, {
+    const res = await axios.post("https://local-services-backend.onrender.com/api/profile/upload-profile", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         Authorization: token,

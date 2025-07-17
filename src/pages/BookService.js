@@ -15,7 +15,7 @@ const BookService = () => {
   useEffect(() => {
     const fetchService = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/services/all');
+        const res = await axios.get('https://local-services-backend.onrender.com/api/services/all');
         const svc = res.data.find(item => item._id === id);
         if (svc) setService(svc);
       } catch (err) {
@@ -31,7 +31,7 @@ const BookService = () => {
 
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/bookings/create',
+        'https://local-services-backend.onrender.com/api/bookings/create',
         { serviceId: id, date },
         { headers: { Authorization: token } }
       );

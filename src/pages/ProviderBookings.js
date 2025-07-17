@@ -10,7 +10,7 @@ const ProviderBookings = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/bookings/provider", {
+        const res = await axios.get("https://local-services-backend.onrender.com/api/bookings/provider", {
           headers: {
             Authorization: `Bearer ${token}`, // Make sure your backend expects 'Bearer'
           },
@@ -27,7 +27,7 @@ const ProviderBookings = () => {
   const handleStatusChange = async (id, status) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/bookings/update-status/${id}`,
+        `https://local-services-backend.onrender.com/api/bookings/update-status/${id}`,
         { status },
         {
           headers: {
@@ -36,7 +36,7 @@ const ProviderBookings = () => {
         }
       );
       // Refresh the list after status update
-      const updated = await axios.get("http://localhost:5000/api/bookings/provider", {
+      const updated = await axios.get("https://local-services-backend.onrender.com/api/bookings/provider", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
