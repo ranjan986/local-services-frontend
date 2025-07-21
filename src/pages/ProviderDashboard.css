@@ -24,7 +24,9 @@
   margin-bottom: 40px;
 }
 
-.provider-dashboard input {
+.provider-dashboard input,
+.provider-dashboard textarea
+{
   padding: 12px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -33,7 +35,9 @@
   transition: border-color 0.3s;
 }
 
-.provider-dashboard input:focus {
+.provider-dashboard input:focus,
+.provider-dashboard textarea:focus
+{
   border-color: #007bff;
 }
 
