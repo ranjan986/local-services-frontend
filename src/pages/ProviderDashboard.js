@@ -91,7 +91,7 @@ const ProviderDashboard = () => {
       <h3>{editMode ? "Edit Service" : "Add Service"}</h3>
       <form onSubmit={editMode ? handleUpdate : handleCreate}>
         <input name="title" placeholder="Title" value={formData.title} onChange={handleChange} required />
-        <input name="description" placeholder="Description" value={formData.description} onChange={handleChange} required />
+        <textarea name="description" placeholder="Description" rows="5" value={formData.description} onChange={handleChange} required />
         <input name="category" placeholder="Category" value={formData.category} onChange={handleChange} required />
         <input name="price" placeholder="Price" value={formData.price} onChange={handleChange} required />
         <input type="file" accept="image/*" onChange={(e) => setImage(e.target.files[0])} />
